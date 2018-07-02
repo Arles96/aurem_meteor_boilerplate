@@ -7,7 +7,7 @@ Template.info.onCreated(() => {
 });
 
 Template.info.helpers({
-  links () {
+  links() {
     const links = Links.find();
     console.log(links.fetch())
     return links;
