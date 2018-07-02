@@ -7,7 +7,7 @@ import './publications';
 
 describe('links publications', () => {
   beforeEach(() => {
-    Links.remove();
+    Links.remove({});
     Links.insert({
       title: 'meteor homepage',
       url: 'https://www.meteor.com'

@@ -8,7 +8,7 @@ import './methods';
 if (Meteor.isServer) {
   describe('links methods', () => {
     beforeEach(() => {
-      Links.remove();
+      Links.remove({});
     });
 
     it('can add a new link', () => {
@@ -16,7 +16,7 @@ if (Meteor.isServer) {
 
       addLink.apply({}, ['meteor.com', 'https://www.meteor.com']);
 
-      assert.equal(Links.find().count(), 3);
+      assert.equal(Links.find().count(), 1);
     });
   });
 }
