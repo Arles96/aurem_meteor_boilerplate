@@ -6,7 +6,8 @@
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore",
-    "lint:js": "npm run lint:eslint -- . "
+    "lint:js": "npm run lint:eslint -- . ",
+    "cli": "npm run lint && npm run test"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.51",
