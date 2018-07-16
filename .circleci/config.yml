@@ -54,14 +54,14 @@ jobs:
             echo "Java version:"
             java -version
       - run:
-          name: install npm packages
+          name: install bcrypt dependency
           command: meteor npm install --save bcrypt
       - run:
           name: install npm packages
           command: meteor npm i
       - run:
           name: code linting
-          command: npm run lint
+          command: meteor npm run lint
       - run:
           name: copy meteor bin to build cache
           command: |
