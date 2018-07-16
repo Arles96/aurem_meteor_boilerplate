@@ -54,7 +54,7 @@ jobs:
             echo "Java version:"
             java -version
       - run:
-          name: install npm packages
+          name: install bcrypt dependency
           command: meteor npm install --save bcrypt
       - run:
           name: install npm packages
