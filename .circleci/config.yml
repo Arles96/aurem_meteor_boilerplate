@@ -61,7 +61,7 @@ jobs:
           command: meteor npm i
       - run:
           name: code linting
-          command: npm run lint
+          command: meteor npm run lint
       - run:
           name: copy meteor bin to build cache
           command: |
